@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>留言板</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/view.css">
+    <style>
+         #code  
+            {  
+                font-family:Arial;  
+                font-style:italic;  
+                font-weight:bold;  
+                border:0;  
+                letter-spacing:2px;  
+                color:blue;
+                outline: none;
+                width: 60px;  
+            }  
+    </style>
+
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="container-fluid">
+          <header class="whiteBg  head">
+             <div class="row nav_height auto">
+              <div class="col-md-6">
+               <img src="images/logo.png" alt="logo">
+                <div class="word">
+                    
+                </div>
+              </div>
+               <div class="col-md-6 line_height60 mt10">
+                <ul class="nav nav-pills ml">
+                    <li role="presentation" ><a href="./index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>首页</a>
+                    </li>
+                    <li role="presentation"><a href="#"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>资源分享</a>
+                    </li>
+                     <li role="presentation"><a href="./diary.html"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>个人日记</a>
+                    </li>
+                    <li role="presentation"><a href="./personal.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>关于我</a>
+                    </li>
+                    <li role="presentation" class="active"><a href="./view.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>在线留言</a>
+                    </li>
+                </ul>
+               </div>
+              </div>
+            </header>
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="panel panel-default mt10 ">
+                        <div class="panel-heading">
+                            <ol class="breadcrumb whiteBg marginBtnone">
+                              <li><a href="#">首页</a></li>
+                              <li class="active">留言板</li>
+                            </ol>
+                        </div>
+                    </div>
+                 
+                </div>
+            </div>
+            <div class="main-content-box">
+                
+        
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="panel panel-default">
+                        <div class="panel-body view">
+                            <h3>留言板</h3>
+                            <img class="" src="images/logo.png" width="100%" alt="">
+                          <a href="#exampleInputEmail1"><button type="button" class="btn btn-primary btn-lg btn-block">发表评论</button></a>
+                         
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-body ">
+                            <img class="fl" src="images/1.jpg" width="45" height="45" alt="">
+                            <div class="fl pl width90pc">
+                                <p><span class="label label-success">昵称：</span>  <span>中华人民共和国国歌</span>
+                                </p>
+                                <p class="text_content">响应式主题高级你好我也好</p><span class="fr colorBlue">回复</span>
+                                <p class="message_time">
+                                    <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> 日期:<span>20132s6151</span>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-body ">
+                            <img class="fl" src="images/1.jpg" width="45" height="45" alt="">
+                            <div class="fl pl width90pc">
+                                <p><span class="label label-success">昵称：</span>  <span>中华人民共和国国歌</span>
+                                </p>
+                                <p class="text_content">响应式主题高级你好我也好</p><span class="fr colorBlue">回复</span>
+                                <p class="message_time">
+                                    <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> 日期:<span>20132s6151</span>
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="panel panel-default padding25">
+                        <div class="panel-body colorHui">
+                            <img class="fl" src="images/1.jpg" width="45" height="45" alt="">
+                            <div class="fl pl width90pc">
+                                <p><span class="label label-success">昵称：</span>  <span>中华人民共和国国歌</span>
+                                </p>
+                                <p class="text_content">响应式主题高级你好我也好</p><span class="fr colorBlue">回复</span>
+                                <p class="message_time">
+                                    <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> 日期:<span>20132s6151</span>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div> 
+                    </div>
+
+                    <div class="panel panel-default none" id="view">
+                        <div class="panel-body">
+                      <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">评论</label>
+                        <br>
+                        <input type="email" class="form-control width45pc fl mb" id="exampleInputEmail1" value="访客"> <span>昵称（必填）</span>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1"></label>
+                        <input type="password" class="form-control width45pc"  id="exampleInputPassword1" placeholder="请输入您的邮箱,我们保证不会公开"> <span>邮箱（必填）</span>
+                       
+                      </div>
+                      <div class="form-group"> 
+                             <div>  
+                                <input type = "text" id = "input"/>  
+                                <input type = "button" id="code" onclick="createCode();"/>  
+                                <input type = "button" value = "验证" onclick = "validate()"/>  
+                                <span>验证码（必填）</span>
+                            </div>  
+                          
+                      </div>
+                      <div class="form-group">
+                        <textarea class="form-control" rows="3"></textarea>
+                      </div>
+                
+                      <button type="button" class="btn btn-success">提交评论</button>
+                      <button type="button" class="btn btn-danger" id="cancleView">取消回复</button>
+
+                    </form>
+                  
+
+                        </div>
+                    </div>                                   
+                    
+                </div>
+
+                <div class="col-md-4">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+                            <div class="input-group">
+                                <div class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></div>
+			      <input style="width:214px" type="text" class="form-control" id="exampleInputAmount" placeholder="搜索" >
+			   
+			    </div>
+			  </div>
+			  <button type="button" class="btn btn-primary">搜索</button>
+			</form>
+			<div class="panel panel-default mt10 panel-success mb">
+              <div class="panel-heading"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> 热门文章</div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-body ">
+                                    <img class="fl" src="images/logo.png" width="100" alt="">
+                                    <div class="fl pl">
+                                        <p>响应式主题高级你好我也好</p>
+                                        <p class="message_time"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> 时间2010数据库的设计</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="panel panel-default mt10 panel-warning mb">
+                                <div class="panel-heading"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> 最新留言</div>
+                            </div>
+                            <div class="panel panel-default ">
+
+                                <div class="panel-body border_bottom">
+                                    <div>
+                                        <img src="images/logo.png" width="25" alt=""><span>博客</span>:<span>真的不错哦！</span>	
+                                    </div>
+
+                                </div>
+                                <div class="panel-body border_bottom">
+                                    <div>
+                                        <img src="images/logo.png" width="25" alt=""><span>博客</span>:<span>真的不错哦！</span>	
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default mt10 panel-default mb">
+                                <div class="panel-heading"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> 友情链接</div>
+                            </div>
+                            <div class="panel panel-default ">
+
+                                <div class="panel-body border_bottom">
+                                    <div>
+                                        <img src="images/logo.png" width="25" alt=""><span>博客</span>:<span>真的不错哦！</span>	
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                </div>
+            </div>
+                <script src="js/jquery-1.10.2.min.js"></script>
+                <script src="js/bootstrap.min.js"></script>
+                <script src="common/common.js"></script>
+                <script>
+                var code ; //在全局定义验证码   
+                //产生验证码  
+                  function createCode(){  
+                         code = "";   
+                         var codeLength = 4;//验证码的长度  
+                         var checkCode = document.getElementById("code");   
+                         var random = new Array(0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R',  
+                         'S','T','U','V','W','X','Y','Z');//随机数  
+                         for(var i = 0; i < codeLength; i++) {//循环操作  
+                            var index = Math.floor(Math.random()*36);//取得随机数的索引（0~35）  
+                            code += random[index];//根据索引取得随机数加到code上  
+                        }  
+                        checkCode.value = code;//把code值赋给验证码  
+                    }  
+                    createCode();
+                    //校验验证码  
+                    function validate(){  
+                        var inputCode = document.getElementById("input").value.toUpperCase(); //取得输入的验证码并转化为大写        
+                        if(inputCode.length <= 0) { //若输入的验证码长度为0  
+                            alert("请输入验证码！"); //则弹出请输入验证码  
+                        }         
+                        else if(inputCode != code ) { //若输入的验证码与产生的验证码不一致时  
+                            alert("验证码输入错误！@_@"); //则弹出验证码输入错误  
+                            createCode();//刷新验证码  
+                            document.getElementById("input").value = "";//清空文本框  
+                        }         
+                        else { //输入正确时  
+                            alert("^-^"); //弹出^-^  
+                        }             
+                    }  
+
+
+                    // 弹出评论框
+                    $(".btn-block").click(function(){
+                        $("#view").removeClass("none");
+                    })
+                    // 隐藏评论框
+                    $("#cancleView").click(function(){
+                        $("#view").addClass("none");
+                    })
+                </script>
+</body>
+
+</html>

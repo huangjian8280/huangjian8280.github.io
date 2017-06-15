@@ -1,0 +1,62 @@
+.content{
+	padding-top: 0;
+}
+.marginBtnone{
+	margin-bottom: 0;
+}
+.view h3{
+	text-align: center;
+}
+.width90pc{
+	width: 90%;
+}
+.fr{
+	float: right;
+}
+.colorBlue{
+	color: #3f729b;
+	cursor: pointer;
+}
+.col-md-8 .panel-default {
+	margin-bottom: 0;
+}
+.padding25{
+	padding: 25px;
+	border: none;
+}
+.colorHui{
+	background-color: #dddddd;
+}
+.width45pc{
+	width: 45%;
+	display: inline-block;
+}
+.btn-block a{
+	color: white;
+	text-decoration: none;
+}
+.none{
+	display: none;
+}
+/*个人*/
+.fl h4{
+	font-weight: 700;
+}
+.personal-info{
+	position: relative;
+    padding: 20px 0 50px;
+}
+.personal-info .text{
+	font-size: 15px;
+    color: #666;
+    line-height: 25px;
+    text-indent: 25px;
+}
+.personal-info img{
+	float: right;
+	width: 50%;
+	height: 50%;
+}
+.weixin img{
+	width: 100%;
+}
